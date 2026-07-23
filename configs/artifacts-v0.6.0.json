@@ -1,0 +1,11 @@
+{
+  "release": "0.6.0",
+  "files": {
+    "exemplar_bank.npz": "30cba112e3e2ae1d38fc295e0496c26eb4adacaf633110e8e076855d23e48c77",
+    "exemplar_cots.json": "56c621a27b5508aa56e820818abdbd2fe35ef8a70abe271f650c7b501efb8363",
+    "organ_dx_ensemble.pt": "030bfd436bc3b84c729b14f19597979971846ff67e9c30455eaa86d231b023af",
+    "organ_uni2h_ms_ensemble.pt": "e2c6bc3617906a6442934c5e6cc795ec7f7d9bb47ea8af0bfdaa4c05e38294e8",
+    "slot_medoids.json": "85c1113fbe28982eada3382d8157571117084f6a336227ca346a91f90e876972",
+    "uni2h/pytorch_model.bin": "6e077eda234bebc595868d918d3458d9dd32a050199b0ff04443b2f46a0a3b1e"
+  }
+}

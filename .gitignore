@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+test/output/
+test/input/interf1/images/whole-slide-image/
+
+model/*
+!model/README.md
+
+*.tar
+*.tar.gz

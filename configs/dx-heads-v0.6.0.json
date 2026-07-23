@@ -1,0 +1,1642 @@
+{
+  "head_count": 203,
+  "heads": [
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s01",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s02",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s03",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s04",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s05",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s06",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s07",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s08",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s09",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s10",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s11",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s12",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s13",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s14",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s15",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s16",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s17",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s18",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s19",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "bladder-256-s20",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s01",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s02",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s03",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s04",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s05",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s06",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s07",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s08",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "bladder-512-s09",
+      "organ": "bladder",
+      "output": "checkpoints/dx/bladder/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s01",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s02",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s03",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s04",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s05",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s06",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s07",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s08",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s09",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s10",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s11",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s12",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s13",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s14",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s15",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s16",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s17",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s18",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s19",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "breast-256-s20",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s01",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s02",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s03",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s04",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s05",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s06",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s07",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s08",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "breast-512-s09",
+      "organ": "breast",
+      "output": "checkpoints/dx/breast/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s01",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s02",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s03",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s04",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s05",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s06",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s07",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s08",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s09",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s10",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s11",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s12",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s13",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s14",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s15",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s16",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s17",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s18",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s19",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "cervix-256-s20",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s01",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s02",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s03",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s04",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s05",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s06",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s07",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s08",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "cervix-512-s09",
+      "organ": "cervix",
+      "output": "checkpoints/dx/cervix/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s01",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s02",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s03",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s04",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s05",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s06",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s07",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s08",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s09",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s10",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s11",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s12",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s13",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s14",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s15",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s16",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s17",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s18",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s19",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "colon-256-s20",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s01",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s02",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s03",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s04",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s05",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s06",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s07",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s08",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "colon-512-s09",
+      "organ": "colon",
+      "output": "checkpoints/dx/colon/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s01",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s02",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s03",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s04",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s05",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s06",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s07",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s08",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s09",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s10",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s11",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s12",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s13",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s14",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s15",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s16",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s17",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s18",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s19",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "lung-256-s20",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s01",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s02",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s03",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s04",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s05",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s06",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s07",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s08",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "lung-512-s09",
+      "organ": "lung",
+      "output": "checkpoints/dx/lung/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s01",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s02",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s03",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s04",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s05",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s06",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s07",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s08",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s09",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s10",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s11",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s12",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s13",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s14",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s15",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s16",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s17",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s18",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s19",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "prostate-256-s20",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s01",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s02",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s03",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s04",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s05",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s06",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s07",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s08",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "prostate-512-s09",
+      "organ": "prostate",
+      "output": "checkpoints/dx/prostate/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s01",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-01.pt",
+      "scale": 256,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s02",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-02.pt",
+      "scale": 256,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s03",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-03.pt",
+      "scale": 256,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s04",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-04.pt",
+      "scale": 256,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s05",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-05.pt",
+      "scale": 256,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s06",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-06.pt",
+      "scale": 256,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s07",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-07.pt",
+      "scale": 256,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s08",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-08.pt",
+      "scale": 256,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s09",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-09.pt",
+      "scale": 256,
+      "seed": 9
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s10",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-10.pt",
+      "scale": 256,
+      "seed": 10
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s11",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-11.pt",
+      "scale": 256,
+      "seed": 11
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s12",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-12.pt",
+      "scale": 256,
+      "seed": 12
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s13",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-13.pt",
+      "scale": 256,
+      "seed": 13
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s14",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-14.pt",
+      "scale": 256,
+      "seed": 14
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s15",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-15.pt",
+      "scale": 256,
+      "seed": 15
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s16",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-16.pt",
+      "scale": 256,
+      "seed": 16
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s17",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-17.pt",
+      "scale": 256,
+      "seed": 17
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s18",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-18.pt",
+      "scale": 256,
+      "seed": 18
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s19",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-19.pt",
+      "scale": 256,
+      "seed": 19
+    },
+    {
+      "features": "features/full_tissue_256",
+      "id": "stomach-256-s20",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/256/seed-20.pt",
+      "scale": 256,
+      "seed": 20
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s01",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-01.pt",
+      "scale": 512,
+      "seed": 1
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s02",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-02.pt",
+      "scale": 512,
+      "seed": 2
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s03",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-03.pt",
+      "scale": 512,
+      "seed": 3
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s04",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-04.pt",
+      "scale": 512,
+      "seed": 4
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s05",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-05.pt",
+      "scale": 512,
+      "seed": 5
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s06",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-06.pt",
+      "scale": 512,
+      "seed": 6
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s07",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-07.pt",
+      "scale": 512,
+      "seed": 7
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s08",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-08.pt",
+      "scale": 512,
+      "seed": 8
+    },
+    {
+      "features": "features/full_tissue_512",
+      "id": "stomach-512-s09",
+      "organ": "stomach",
+      "output": "checkpoints/dx/stomach/512/seed-09.pt",
+      "scale": 512,
+      "seed": 9
+    }
+  ],
+  "model": {
+    "architecture": "ACMIL_GA",
+    "branches": 1,
+    "center": "ALL",
+    "center_balance": false,
+    "epochs": 40,
+    "mask_drop": 0.0,
+    "n_masked": 0,
+    "selection_set": "overlapping_first_10_percent_training_fallback",
+    "subsample": 1.0
+  },
+  "release": "0.6.0",
+  "schema_version": 1
+}

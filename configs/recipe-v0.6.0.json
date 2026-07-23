@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "release": "0.6.0",
+  "required_variables": [
+    "WSI_ROOT",
+    "TRAIN_COT",
+    "TRAIN_COT_SHA256",
+    "UNI2H_WEIGHTS",
+    "UNI2H_SHA256"
+  ],
+  "defaults": {
+    "WORK_ROOT": "work/v0.6.0",
+    "ARTIFACT_ROOT": "artifacts/v0.6.0",
+    "DEVICE": "cuda",
+    "CPU_WORKERS": "16"
+  },
+  "stages": [
+    {
+      "id": "manifest",
+      "module": "training.build_manifest",
+      "args": [
+        "--cot", "${TRAIN_COT}",
+        "--cot-sha256", "${TRAIN_COT_SHA256}",
+        "--wsi-root", "${WSI_ROOT}",
+        "--out", "${WORK_ROOT}/manifest.json",
+        "--unmatched-out", "${WORK_ROOT}/unmatched.json"
+      ]
+    },
+    {
+      "id": "sparse-tiles",
+      "module": "training.extract_sparse_tiles",
+      "args": [
+        "--manifest", "${WORK_ROOT}/manifest.json",
+        "--wsi-root", "${WSI_ROOT}",
+        "--cache", "${WORK_ROOT}/tiles/sparse",
+        "--scales", "256,512",
+        "--tiles-per-scale", "16",
+        "--grid", "12",
+        "--workers", "${CPU_WORKERS}"
+      ]
+    },
+    {
+      "id": "sparse-merge",
+      "module": "training.extract_sparse_tiles",
+      "args": [
+        "--merge",
+        "--cache", "${WORK_ROOT}/tiles/sparse",
+        "--out", "${WORK_ROOT}/tiles/sparse-multiscale.npz"
+      ]
+    },
+    {
+      "id": "sparse-features",
+      "module": "training.extract_sparse_features",
+      "args": [
+        "--tiles", "${WORK_ROOT}/tiles/sparse-multiscale.npz",
+        "--weights", "${UNI2H_WEIGHTS}",
+        "--weights-sha256", "${UNI2H_SHA256}",
+        "--out", "${WORK_ROOT}/features/sparse-multiscale.npz",
+        "--device", "${DEVICE}"
+      ]
+    },
+    {
+      "id": "full-coordinates-256",
+      "module": "training.tile_full_tissue",
+      "args": [
+        "--manifest", "${WORK_ROOT}/manifest.json",
+        "--wsi-root", "${WSI_ROOT}",
+        "--out", "${WORK_ROOT}/coordinates/256",
+        "--tile-size", "256",
+        "--downsample", "32",
+        "--min-tissue-fraction", "0.25",
+        "--max-tiles", "2000",
+        "--workers", "${CPU_WORKERS}"
+      ]
+    },
+    {
+      "id": "full-coordinates-512",
+      "module": "training.tile_full_tissue",
+      "args": [
+        "--manifest", "${WORK_ROOT}/manifest.json",
+        "--wsi-root", "${WSI_ROOT}",
+        "--out", "${WORK_ROOT}/coordinates/512",
+        "--tile-size", "512",
+        "--downsample", "32",
+        "--min-tissue-fraction", "0.25",
+        "--max-tiles", "2000",
+        "--workers", "${CPU_WORKERS}"
+      ]
+    },
+    {
+      "id": "full-features-256",
+      "module": "training.extract_full_tissue_features",
+      "args": [
+        "--manifest", "${WORK_ROOT}/manifest.json",
+        "--wsi-root", "${WSI_ROOT}",
+        "--coords", "${WORK_ROOT}/coordinates/256",
+        "--tile-size", "256",
+        "--weights", "${UNI2H_WEIGHTS}",
+        "--weights-sha256", "${UNI2H_SHA256}",
+        "--out", "${WORK_ROOT}/features/full_tissue_256",
+        "--device", "${DEVICE}"
+      ]
+    },
+    {
+      "id": "full-features-512",
+      "module": "training.extract_full_tissue_features",
+      "args": [
+        "--manifest", "${WORK_ROOT}/manifest.json",
+        "--wsi-root", "${WSI_ROOT}",
+        "--coords", "${WORK_ROOT}/coordinates/512",
+        "--tile-size", "512",
+        "--weights", "${UNI2H_WEIGHTS}",
+        "--weights-sha256", "${UNI2H_SHA256}",
+        "--out", "${WORK_ROOT}/features/full_tissue_512",
+        "--device", "${DEVICE}"
+      ]
+    },
+    {
+      "id": "organ-ensemble",
+      "module": "training.train_organ_ensemble",
+      "args": [
+        "--features", "${WORK_ROOT}/features/sparse-multiscale.npz",
+        "--out", "${WORK_ROOT}/checkpoints/organ_uni2h_ms_ensemble.pt",
+        "--heads", "25",
+        "--epochs", "3",
+        "--device", "${DEVICE}"
+      ]
+    },
+    {
+      "id": "diagnosis-heads",
+      "module": "training.train_dx_plan",
+      "args": [
+        "--config", "configs/dx-heads-v0.6.0.json",
+        "--cot", "${TRAIN_COT}",
+        "--cot-sha256", "${TRAIN_COT_SHA256}",
+        "--work-root", "${WORK_ROOT}",
+        "--device", "${DEVICE}"
+      ]
+    },
+    {
+      "id": "diagnosis-bundle",
+      "module": "training.bundle_dx_ensemble",
+      "args": [
+        "--config", "configs/dx-heads-v0.6.0.json",
+        "--work-root", "${WORK_ROOT}",
+        "--out", "${WORK_ROOT}/checkpoints/organ_dx_ensemble.pt"
+      ]
+    },
+    {
+      "id": "medoids",
+      "module": "training.build_medoids",
+      "args": [
+        "--cot", "${TRAIN_COT}",
+        "--cot-sha256", "${TRAIN_COT_SHA256}",
+        "--out", "${WORK_ROOT}/retrieval/slot_medoids.json"
+      ]
+    },
+    {
+      "id": "retrieval-bank",
+      "module": "training.build_retrieval_bank",
+      "args": [
+        "--features", "${WORK_ROOT}/features/sparse-multiscale.npz",
+        "--cot", "${TRAIN_COT}",
+        "--cot-sha256", "${TRAIN_COT_SHA256}",
+        "--out-bank", "${WORK_ROOT}/retrieval/exemplar_bank.npz",
+        "--out-cots", "${WORK_ROOT}/retrieval/exemplar_cots.json"
+      ]
+    },
+    {
+      "id": "artifacts",
+      "module": "training.artifacts",
+      "args": [
+        "assemble",
+        "--lock", "configs/artifacts-v0.6.0.json",
+        "--backbone", "${UNI2H_WEIGHTS}",
+        "--organ", "${WORK_ROOT}/checkpoints/organ_uni2h_ms_ensemble.pt",
+        "--diagnosis", "${WORK_ROOT}/checkpoints/organ_dx_ensemble.pt",
+        "--medoids", "${WORK_ROOT}/retrieval/slot_medoids.json",
+        "--retrieval-bank", "${WORK_ROOT}/retrieval/exemplar_bank.npz",
+        "--retrieval-cots", "${WORK_ROOT}/retrieval/exemplar_cots.json",
+        "--out", "${ARTIFACT_ROOT}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.git/
+.gitignore
+test/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.tar
+*.tar.gz
+model/README.md
+src/interf1/exemplar_bank.npz
+src/interf1/exemplar_cots.json
+src/interf1/global_medoid_cot.json
+src/interf1/slot_medoids.json
