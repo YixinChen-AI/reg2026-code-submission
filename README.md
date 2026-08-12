@@ -35,7 +35,8 @@ The whole-slide pipeline:
 
 1. samples tissue-rich tiles at 256 px and 512 px;
 2. encodes resized 224 px tiles with the frozen UNI2-h ViT-H/14 backbone;
-3. predicts one of seven organs with a 25-head, center-balanced linear ensemble;
+3. predicts one of seven organs with a 25-head, center-organ weighted linear
+   ensemble;
 4. predicts the primary diagnosis with per-organ, multi-scale gated-attention
    MIL ensembles when a CUDA device is available;
 5. retrieves the nearest challenge-training exemplar within the predicted
@@ -172,10 +173,11 @@ multi-scale UNI2-h features, train the organ and diagnosis ensembles, build the
 medoid and exemplar retrieval assets, and assemble a verified artifact set.
 Expensive stages are resumable.
 
-The diagnosis plan contains 203 deployed `K=1` heads: seven organs with seeds
-1 through 20 at 256 px and seeds 1 through 9 at 512 px. Every head uses 40
-epochs, `center=ALL`, and `subsample=1.0`. The organ router contains 25 linear
-heads trained for three epochs.
+The diagnosis plan contains 203 deployed `K=1` models. Each of the seven organ
+routes uses seeds 1 through 20 at 256 px and seeds 1 through 9 at 512 px, so a
+single case evaluates 29 diagnosis models after organ routing. Every diagnosis
+model uses 40 epochs, `center=ALL`, and `subsample=1.0`. The organ router
+contains 25 linear heads trained for three epochs.
 
 Independently verify the assembled release:
 

@@ -33,10 +33,14 @@ workflow steps with `question`, `answer`, and `next_question` fields.
 ## Architecture and inference
 
 Interface 1 samples tissue-rich regions at two scales and encodes tiles with
-frozen UNI2-h. A center-balanced linear-head ensemble predicts organ. Per-organ
-gated-attention MIL ensembles predict the primary diagnosis from denser
-multi-scale bags on CUDA. The normalized mean slide embedding retrieves the
-nearest exemplar within the predicted organ/diagnosis group.
+frozen UNI2-h. A center-organ weighted linear-head ensemble predicts organ.
+Per-organ gated-attention MIL ensembles predict the primary diagnosis from denser
+multi-scale bags on CUDA. For the predicted organ, inference loads 20 models at
+256 px and nine at 512 px. Each model has one attention branch, and diagnosis
+probabilities are summed by label across all 29 models. Across the seven organ
+routes, the controlled artifact therefore contains 203 diagnosis models. The
+normalized mean slide embedding retrieves the nearest exemplar within the
+predicted organ/diagnosis group.
 
 Fallback order is diagnosis medoid, organ medoid, then global medoid. Process
 isolation, a fixed inference deadline, and schema validation provide bounded and
@@ -44,11 +48,15 @@ valid output behavior.
 
 ## Training and data
 
-The downstream heads were trained from the controlled REG2026 training release.
-The organ router uses center-balanced resampling over frozen multi-scale tile
-features. Diagnosis models use full-tissue feature bags, per-organ label
-vocabularies, multi-seed bagging, and center balancing. The exemplar and medoid
-tables are derived from challenge training workflows.
+The downstream models were trained from the controlled REG2026 training
+release. The organ router uses weighted bootstrap resampling over frozen
+multi-scale tile features. For a center-organ cell, each tile receives weight
+proportional to the square root of the number of WSIs divided by the number of
+tiles in that cell. Diagnosis models use full-tissue feature bags, per-organ
+label vocabularies, and multiple seeds. The reproduction configuration uses all
+available bags for the relevant organ and scale with no center-balanced
+resampling. The exemplar and medoid tables are derived from challenge training
+workflows.
 
 The foundation-model checkpoint was not trained by CYX-AI. See
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution and license
