@@ -1,6 +1,6 @@
 # REG2026 v0.6.0
 
-Private review repository for the CYX-AI REG2026 submission.
+Reference implementation for the CYX-AI REG2026 submission.
 
 - Team: CYX-AI
 - Team member: Yixin Chen
@@ -11,15 +11,14 @@ Private review repository for the CYX-AI REG2026 submission.
 - Runtime: offline, one case per container invocation
 
 This repository contains inference, packaging, and reproduction code. Large
-checkpoints, controlled training data, and the complete release manifest are
-supplied separately through the authorized review channel. Challenge-derived
-retrieval artifacts are not stored in Git and remain subject to the restrictions
-below.
+checkpoints and controlled challenge data are not included. Challenge-derived
+retrieval artifacts are excluded from Git and remain subject to the applicable
+challenge terms.
 
-The submitted inference baseline is tag `v0.6.0`, commit
-`908a1596198fd862c99881bd0cdb7a7147af15bd`. This review snapshot preserves its
-normal prediction path and selected model assets while removing unused template
-code and adding deterministic training, packaging, and integrity checks.
+The submitted system is version `0.6.0`. This repository preserves its
+inference path and documents deterministic training, packaging, and integrity
+checks. Required model assets are identified by SHA-256 hashes in
+`configs/artifacts-v0.6.0.json`.
 
 ## Method
 
@@ -65,10 +64,10 @@ The entrypoint is:
 python inference.py
 ```
 
-## Controlled model staging
+## Model staging
 
-Before building, an authorized reviewer must place the following files under
-`model/`:
+Before building, obtain the required assets from their licensed sources and
+place them under `model/`:
 
 ```text
 model/
@@ -85,7 +84,7 @@ model/
 `configs/artifacts-v0.6.0.json` is the checked-in release lock.
 `MANIFEST.sha256` uses the standard `sha256sum` format with paths relative to
 `model/` and must contain exactly the same six paths and hashes. Generate it
-only from the controlled release files:
+only from the corresponding release files:
 
 ```bash
 cd model
@@ -103,10 +102,9 @@ Docker starts. The Dockerfile repeats that verification after copying the local
 staging directory. Extra files and duplicate manifest entries are rejected. The
 build does not download model weights.
 
-Asset purposes and the checksums available in this review checkout are recorded
-in [MODEL_CARD.md](MODEL_CARD.md). UNI2-h access and use remain subject to its
-gated license terms. The exemplar files contain challenge-derived content and
-are restricted to authorized REG2026 review and evaluation.
+Asset purposes and checksums are recorded in [MODEL_CARD.md](MODEL_CARD.md).
+UNI2-h access and use remain subject to its gated license terms. The exemplar
+files contain challenge-derived content and are not redistributed here.
 
 ## Build and test
 
@@ -120,7 +118,7 @@ inference, an NVIDIA GPU exposed to Docker.
 
 The local test uses fixtures under `test/input/interf0` and
 `test/input/interf1`, runs the image with networking disabled, and validates the
-JSON output shape. A review WSI must be staged at
+JSON output shape. A test WSI must be staged at
 `test/input/interf1/images/whole-slide-image/<uid>.tiff`; its name must match the
 workflow entry in `test/input/interf1/inputs.json`.
 
@@ -134,7 +132,7 @@ INTERFACES=interf1 ./do_test_run.sh
 Interface 1 testing fails when Docker GPU access is unavailable. Set
 `ALLOW_CPU_FALLBACK=1` only when validating the documented fallback path.
 
-Export the reviewed image:
+Export the container image:
 
 ```bash
 ./do_save.sh
@@ -145,9 +143,8 @@ embedded in the image; no separate model archive is produced.
 
 ## Training reproduction
 
-Training requires the controlled REG2026 training release and approved UNI2-h
-access. Install the training dependencies and verify the checked-in diagnosis
-plan:
+Training requires access to the REG2026 training release and UNI2-h. Install
+the training dependencies and verify the checked-in diagnosis plan:
 
 ```bash
 python -m pip install --requirement requirements-training.txt
@@ -161,10 +158,10 @@ Run the complete deterministic recipe from the repository root:
 ```bash
 python -m training.run_recipe \
   --recipe configs/recipe-v0.6.0.json \
-  --set WSI_ROOT=review-data/wsis \
-  --set TRAIN_COT=review-data/train_CoT.json \
+  --set WSI_ROOT=data/wsis \
+  --set TRAIN_COT=data/train_CoT.json \
   --set TRAIN_COT_SHA256=<sha256> \
-  --set UNI2H_WEIGHTS=review-assets/uni2h/pytorch_model.bin \
+  --set UNI2H_WEIGHTS=assets/uni2h/pytorch_model.bin \
   --set UNI2H_SHA256=6e077eda234bebc595868d918d3458d9dd32a050199b0ff04443b2f46a0a3b1e
 ```
 
@@ -186,7 +183,7 @@ python -m training.artifacts verify --root artifacts/v0.6.0
 ```
 
 The assembly output keeps all six selected assets under `model/` and writes
-`model/MANIFEST.sha256` for the Docker review build.
+`model/MANIFEST.sha256` for the Docker build.
 
 ## Repository scope
 
@@ -196,9 +193,9 @@ The assembly output keeps all six selected assets under `model/` and writes
 | `src/interf0/` | visual-grounding implementation |
 | `src/interf1/` | WSI classification, retrieval, and fallback logic |
 | `training/`, `configs/` | deterministic v0.6.0 reproduction pipeline |
-| `model/` | local controlled asset staging; large files are ignored by Git |
+| `model/` | local model-asset staging; large files are ignored by Git |
 | `Dockerfile`, `requirements.txt` | offline runtime image |
-| `do_build.sh`, `do_test_run.sh`, `do_save.sh` | review packaging commands |
+| `do_build.sh`, `do_test_run.sh`, `do_save.sh` | packaging commands |
 | `MODEL_CARD.md` | model details, hashes, intended use, limitations |
 | `THIRD_PARTY_NOTICES.md` | external models, software, and licenses |
 
@@ -218,5 +215,4 @@ The assembly output keeps all six selected assets under `model/` and writes
 - Outputs are for challenge evaluation only and are not for clinical use.
 
 See [MODEL_CARD.md](MODEL_CARD.md) and
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before reviewing or running the
-model.
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before running the model.

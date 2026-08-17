@@ -15,12 +15,12 @@
 
 ## Intended use
 
-The model is intended only for authorized REG2026 challenge review and
-evaluation. It is not a medical device, does not provide a clinical diagnosis,
-and must not be used for patient care or other operational clinical decisions.
+The model is intended only for REG2026 challenge research and evaluation. It is
+not a medical device, does not provide a clinical diagnosis, and must not be
+used for patient care or other operational clinical decisions.
 
-The controlled assets and derived outputs must not be redistributed. UNI2-h use
-is additionally limited by its gated CC BY-NC-ND 4.0 terms.
+Challenge-derived assets and outputs remain subject to the challenge data terms.
+UNI2-h use is additionally limited by its gated CC BY-NC-ND 4.0 terms.
 
 ## Inputs and outputs
 
@@ -38,7 +38,7 @@ Per-organ gated-attention MIL ensembles predict the primary diagnosis from dense
 multi-scale bags on CUDA. For the predicted organ, inference loads 20 models at
 256 px and nine at 512 px. Each model has one attention branch, and diagnosis
 probabilities are summed by label across all 29 models. Across the seven organ
-routes, the controlled artifact therefore contains 203 diagnosis models. The
+routes, the diagnosis artifact therefore contains 203 models. The
 normalized mean slide embedding retrieves the nearest exemplar within the
 predicted organ/diagnosis group.
 
@@ -48,8 +48,8 @@ valid output behavior.
 
 ## Training and data
 
-The downstream models were trained from the controlled REG2026 training
-release. The organ router uses weighted bootstrap resampling over frozen
+The downstream models were trained from the REG2026 training release. The organ
+router uses weighted bootstrap resampling over frozen
 multi-scale tile features. For a center-organ cell, each tile receives weight
 proportional to the square root of the number of WSIs divided by the number of
 tiles in that cell. Diagnosis models use full-tissue feature bags, per-organ
@@ -99,5 +99,5 @@ when the file set and all six hashes match the checked-in lock.
 ## Reproducibility
 
 Build, test, release, and training commands are documented in
-[README.md](README.md). Exact reproduction also requires the controlled
-challenge release, approved UNI2-h access, and the reviewed asset manifest.
+[README.md](README.md). Exact reproduction also requires access to the
+challenge release and UNI2-h checkpoint, plus the matching asset manifest.

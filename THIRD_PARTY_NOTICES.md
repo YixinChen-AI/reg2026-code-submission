@@ -16,8 +16,8 @@ texts included by package distributions and the container base image.
 UNI2-h permits non-commercial academic research use with attribution. Access
 requires individual registration and acceptance of the upstream terms. The
 upstream terms prohibit redistribution of the checkpoint and restrict commercial
-use and derivatives. The checkpoint in this release must be supplied only
-through the authorized review channel.
+use and derivatives. Each user must obtain the checkpoint directly from the
+upstream source under their own approved access.
 
 ## ACMIL
 
@@ -50,6 +50,6 @@ available in the Python environment.
 ## Challenge-derived artifacts
 
 `slot_medoids.json`, `exemplar_bank.npz`, and `exemplar_cots.json` are derived
-from the REG2026 challenge training release. They are restricted to authorized
-challenge review and evaluation and must not be published, redistributed, or
-used outside the applicable challenge terms.
+from the REG2026 challenge training release. They are not distributed in this
+repository and must not be published, redistributed, or used outside the
+applicable challenge terms.

@@ -63,13 +63,13 @@ run_interface() {
   }
   if [[ "${interface}" == "interf1" ]] \
     && ! compgen -G "${input_path}/images/whole-slide-image/*.tif*" >/dev/null; then
-    printf 'missing Interface 1 review WSI under %s/images/whole-slide-image\n' \
+    printf 'missing Interface 1 test WSI under %s/images/whole-slide-image\n' \
       "${input_path}" >&2
     exit 1
   fi
   if [[ "${interface}" == "interf1" && "${#gpu_args[@]}" -eq 0 \
       && "${ALLOW_CPU_FALLBACK:-0}" != "1" ]]; then
-    printf 'Interface 1 review requires Docker GPU access; set ALLOW_CPU_FALLBACK=1 to test only the fallback path\n' >&2
+    printf 'Interface 1 testing requires Docker GPU access; set ALLOW_CPU_FALLBACK=1 to test only the fallback path\n' >&2
     exit 1
   fi
 
